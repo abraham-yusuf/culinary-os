@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍳 Culinary-OS: AI-Powered Micro-Culinary OS
+
+Culinary-OS adalah sistem manajemen operasional *offline-first* yang dirancang khusus untuk UMKM kuliner skala mikro. Dibangun dengan fokus pada privasi dan efisiensi biaya, sistem ini menjalankan kecerdasan buatan (LLM) secara lokal di *browser* menggunakan WebGPU, menghilangkan ketergantungan pada API eksternal yang mahal.
+
+## 🚀 Fitur Utama
+- **Dynamic HPP Engine:** Perhitungan Harga Pokok Penjualan (COGS) *real-time* yang adaptif terhadap fluktuasi harga bahan baku pasar.
+- **Local AI Marketing & Insight:** Asisten cerdas bertenaga WebGPU (Gemma/TinyLlama) untuk memprediksi kehabisan stok dan membuat *copywriting* promosi.
+- **Offline-First POS:** Transaksi tetap berjalan tanpa koneksi internet dengan sinkronisasi otomatis via IndexedDB.
+
+## 🛠️ Tech Stack
+- **Frontend/Framework:** Next.js (App Router), React, Tailwind CSS
+- **AI Engine:** Hugging Face `transformers.js`, Web Workers, WebGPU
+- **Database/Storage:** IndexedDB (Local), PostgreSQL (Remote Sync via Prisma/Supabase)
+- **Deployment:** Docker
+
+## 🏁 Memulai Proyek (Getting Started)
+(Instruksi instalasi `npm install` dan `npm run dev` akan ditambahkan setelah fase inisialisasi selesai).
 
 ## Getting Started
 
