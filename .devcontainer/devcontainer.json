@@ -1,0 +1,34 @@
+{
+  "name": "Culinary-OS with Gemini CLI",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "postCreateCommand": "npm install && npm install -g @google/gemini-cli",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "google.gemini-code-assist",
+        "ms-vscode-remote.remote-containers",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "gemini.codeAssist.enabled": true
+      }
+    }
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js Dev Server",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "remoteUser": "node",
+  "workspaceFolder": "/workspace"
+}
